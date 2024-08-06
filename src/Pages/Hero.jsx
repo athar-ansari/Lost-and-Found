@@ -153,7 +153,7 @@ const Hero = () => {
             <div className="text-3 lg:-ml-44 lg:text-6xl xs:-ml-[27rem] xs:text-4xl">
               <AnimatedText
                 text="Lost Items"
-                className="ml-[40rem] xl:ml-[35rem]"
+                className="ml-[40rem] xl:ml-[37rem]"
               />
             </div>
           </div>

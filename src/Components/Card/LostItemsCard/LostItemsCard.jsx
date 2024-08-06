@@ -101,6 +101,7 @@ export default function LostItemsCard() {
               <h3 className="opacity-80 -mb-3 italic underline underline-offset-2">
                 Description
               </h3>
+
               <Typography
                 level="body-sm"
                 sx={{

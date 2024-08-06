@@ -27,7 +27,7 @@ export default function RecentLostItems() {
     const fetchLostItems = async () => {
       try {
         const api = import.meta.env.VITE_API_URL;
-        const response = await fetch(`${api}/lost_items`);
+        const response = await fetch(`${api}/item/lost_items`);
         if (!response.ok) throw new Error("Error fetching lost items");
         const data = await response.json();
 

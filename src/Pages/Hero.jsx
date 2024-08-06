@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PreLoader from "@/Components/Loading/PreLoader";
-import image from "../Static/hero.png";
 import ReportBtn from "@/Components/ReportBtn/ReportBtn";
 import { ToastContainer } from "../Components/ui/use-toast";
 import { Navbar } from "@/Components/Navbar/Navbar";
@@ -168,7 +167,7 @@ const Hero = () => {
           {/* Image */}
           <div className="img-hero flex justify-center items-center flex-grow mt-12 lg:p-9 xs:mt-5 xs:p-6">
             <motion.img
-              src={image}
+              src="https://res.cloudinary.com/dgg8xe2o3/image/upload/v1722928917/hero_nvb6p6.png"
               className="rounded-3xl shadow-2xl w-[1200px] xl:w-[1050px]"
               alt="img-hero"
               initial={{ y: -window.innerHeight, scale: 1.5 }}

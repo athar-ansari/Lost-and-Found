@@ -1,23 +1,25 @@
 import React, { useState, useEffect } from "react";
-import image1 from "../../Static/about1.png";
-import image2 from "../../Static/about2.png";
-import image3 from "../../Static/about3.png";
-import image4 from "../../Static/about4.png";
 
 const ImageCarousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [image1, image2, image3, image4];
+
+  const images = [
+    "https://res.cloudinary.com/dgg8xe2o3/image/upload/v1722928918/about1_dpylw4.png",
+    "https://res.cloudinary.com/dgg8xe2o3/image/upload/v1722928918/about2_ei0kfv.png",
+    "https://res.cloudinary.com/dgg8xe2o3/image/upload/v1722928919/about3_lu4ryn.png",
+    "https://res.cloudinary.com/dgg8xe2o3/image/upload/v1722928917/about4_rzgmsg.png",
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 2 seconds
+    }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-64 ">
+    <div className="relative w-full h-64">
       {images.map((image, index) => (
         <img
           key={index}

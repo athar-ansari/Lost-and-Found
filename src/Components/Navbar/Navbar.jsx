@@ -20,9 +20,9 @@ export const Navbar = () => {
             />
           </div>
           <div className="text-[1.5rem] lg:text-base xs:text-sm">
-            <span className="mr-4 lg:mr-6 ">Lost</span>
+            <span className="mr-4 lg:mr-7 ">Lost</span>
             <br />
-            <span className="ml-[4.1rem] -mt-2 absolute lg:ml-11 lg:-mt-3 xs:-mt-2 xs:ml-[2.4rem]">
+            <span className="ml-[4.1rem] -mt-2 absolute lg:ml-11 lg:-mt-3 xs:-mt-2 xs:ml-[2.8rem]">
               Found
             </span>
           </div>

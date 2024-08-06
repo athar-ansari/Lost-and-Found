@@ -16,7 +16,7 @@ const About = () => {
           <div className="w-full ">
             <ImageCarousel />
           </div>
-          <p className="text-lg w-9/12  mt-8 text-wrap text-center  xs:w-full xs:text-sm ">
+          <p className="text-lg w-9/12  mt-8 text-wrap text-center  xs:w-full xs:text-xs ">
             Our "Lost and Found" website is dedicated to helping students
             effortlessly recover lost items and return found ones.
             <br />

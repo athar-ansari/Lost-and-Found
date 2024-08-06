@@ -131,26 +131,26 @@ const Hero = () => {
           {/* Navbar */}
           <Navbar />
 
-          <div className="mt-8 text-9xl font-lora font-bold italic xl:text-7xl xl:mt-16 xs:text-5xl xs:mt-2">
-            <div className="text-1 flex p-1 gap-40 lg:gap-1 lg:-ml-20 lg:text-6xl xs:text-5xl">
+          <div className="mt-8 text-9xl font-lora font-bold italic lg:text-7xl lg:mt-16 xs:text-5xl xs:mt-1">
+            <div className="text-1 flex p-1 gap-40 lg:gap-1 lg:-ml-20 lg:text-6xl xs:text-4xl">
               <AnimatedText
                 text="Find"
                 className="ml-36 -mb-8 xl:-mb-6 xl:ml-44 lg:-mr-36 xs:ml-24 xs:-mb-2"
               />
-              <p className="text-base text-wrap mt-10 w-72 ml-96 xl:mt-5 xl:ml-72 lg:text-xs lg:mr-20 xs:hidden">
+              <p className="text-base text-wrap mt-10 w-72 ml-96 lg:mt-5 xl:ml-72 lg:text-xs lg:mr-20 xs:hidden">
                 Join our community to reconnect with lost belongings and report
                 found items.
               </p>
             </div>
 
-            <div className="text-2 lg:-ml-24 lg:text-6xl xs:-ml-64 xs:text-5xl">
+            <div className="text-2 lg:-ml-24 lg:text-6xl xs:-ml-64 xs:text-4xl">
               <AnimatedText
                 text="or Report"
                 className="ml-72 -mb-3 xl:-mb-1 xl:ml-[19rem] xs:mb-1"
               />
             </div>
 
-            <div className="text-3 lg:-ml-44 lg:text-6xl xs:-ml-[27rem] xs:text-5xl">
+            <div className="text-3 lg:-ml-44 lg:text-6xl xs:-ml-[27rem] xs:text-4xl">
               <AnimatedText
                 text="Lost Items"
                 className="ml-[40rem] xl:ml-[35rem]"
@@ -166,7 +166,7 @@ const Hero = () => {
           {/* report Button for small/mobile screen  -- END */}
 
           {/* Image */}
-          <div className="img-hero flex justify-center items-center flex-grow mt-12 lg:p-9 xs:mt-5 xs:p-6">
+          <div className="img-hero flex justify-center items-center flex-grow mt-12 lg:p-9 xs:mt-2 xs:p-6">
             <motion.img
               src={image}
               className="rounded-3xl shadow-2xl w-[1200px] xl:w-[1020px]"

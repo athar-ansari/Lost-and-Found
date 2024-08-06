@@ -15,18 +15,18 @@ export const Navbar = () => {
           <div className="logo-img -mt-1 -ml-14  ">
             <img
               src={image}
-              className="bg-transparent h-14 lg:h-10 "
+              className="bg-transparent h-14 lg:h-10 xs:h-8 xs:mt-1"
               alt="logo-img"
             />
           </div>
-          <div className="text-[1.5rem] lg:text-base">
-            <span className="mr-4 lg:mr-6">Lost</span>
+          <div className="text-[1.5rem] lg:text-base xs:text-sm">
+            <span className="mr-4 lg:mr-6 ">Lost</span>
             <br />
-            <span className="ml-[4.1rem] -mt-2 absolute lg:ml-11 lg:-mt-3">
+            <span className="ml-[4.1rem] -mt-2 absolute lg:ml-11 lg:-mt-3 xs:-mt-2 xs:ml-[2.4rem]">
               Found
             </span>
           </div>
-          <div className="-mt-2 -ml-8 opacity-35 text-[3.80rem] lg:text-4xl lg:mt-0">
+          <div className="-mt-2 -ml-8 opacity-35 text-[3.80rem] lg:text-4xl  lg:mt-0 xs:text-3xl">
             &
           </div>
         </div>

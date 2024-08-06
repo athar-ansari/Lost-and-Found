@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MobileNavigation from "../MobileNavigation/MobileNavigation";
-import image from "../../Static/logo.png";
+import image1 from "../../Static/logolaptop.png";
+import image2 from "../../Static/logomobile.png";
 import ReportBtn from "../ReportBtn/ReportBtn";
 import { ToastContainer } from "../ui/use-toast";
 import UserStatus from "./UserStatus";
@@ -11,25 +12,19 @@ export const Navbar = () => {
   return (
     <div id="home" className="navbar bg-[#F0EFF1] h-20 overflow-hidden">
       <div className="flex font-extrabold font-serif justify-evenly gap-10 lg:gap-8 xs:gap-2 ">
-        <div className="logo flex pt-5 -ml-28 font-lora leading-none font-extrabold italic lg:-ml-14 lg:mt-2 xs:mr-2">
-          <div className="logo-img -mt-1 -ml-14  ">
-            <img
-              src={image}
-              className="bg-transparent h-14 lg:h-10 xs:h-8 xs:mt-1"
-              alt="logo-img"
-            />
-          </div>
-          <div className="text-[1.5rem] lg:text-base xs:text-sm">
-            <span className="mr-4 lg:mr-7 ">Lost</span>
-            <br />
-            <span className="ml-[4.1rem] -mt-2 absolute lg:ml-11 lg:-mt-3 xs:-mt-2 xs:ml-[2.8rem]">
-              Found
-            </span>
-          </div>
-          <div className="-mt-2 -ml-8 opacity-35 text-[3.80rem] lg:text-4xl  lg:mt-0 xs:text-3xl">
-            &
-          </div>
+        <div className="logo   pt-5 -ml-56   lg:-ml-32 lg:mt-3 xs:-ml-28 ">
+          <img
+            src={image1}
+            className="bg-transparent h-14 lg:h-10 xs:hidden  "
+            alt="logo-img"
+          />
+           <img
+            src={image2}
+            className="bg-transparent  hidden xs:h-10   xs:block "
+            alt="logo-img"
+          />
         </div>
+
 
         {/* This Navigation For Large Screen ,top of the Screen */}
         <div className="ml-48 lg:ml-14 md:-ml-10 xs:hidden">

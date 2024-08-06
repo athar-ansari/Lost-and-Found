@@ -1,10 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
 // Navigation logo for Mobile Device
-import homeImage from "../../Static/home.png";
-import foundImage from "../../Static/report.png";
-import lostImage from "../../Static/loss.png";
-import aboutImage from "../../Static/why.png";
 
 const MobileNavigation = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -21,10 +17,11 @@ const MobileNavigation = () => {
   };
 
   const images = {
-    Home: homeImage,
-    Found: foundImage,
-    Lost: lostImage,
-    Why: aboutImage,
+    Home: "https://res.cloudinary.com/dgg8xe2o3/image/upload/v1722928913/home_vvpdya.png",
+    Found:
+      "https://res.cloudinary.com/dgg8xe2o3/image/upload/v1722928918/report_skrbbe.png",
+    Lost: "https://res.cloudinary.com/dgg8xe2o3/image/upload/v1722928917/loss_nx87nz.png",
+    Why: "https://res.cloudinary.com/dgg8xe2o3/image/upload/v1722928918/why_mluc3u.png",
   };
 
   useEffect(() => {

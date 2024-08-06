@@ -10,7 +10,7 @@ const ShowAllFound = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setInitialLoading(false);
-    }, 1000);
+    }, 800);
 
     return () => clearTimeout(timer);
   }, []);
@@ -21,7 +21,7 @@ const ShowAllFound = () => {
 
   return (
     <>
-      <div className="bg-[#F0EFF1] ">
+      <div className="bg-[#F0EFF1] overflow-hidden">
         <MoreNavBar />
         <div className="flex justify-evenly mb-8 p-8 lg:ml-11 lg:p-5 xs:p-2 xs:ml-2">
           <FoundItemsCard />

@@ -1,9 +1,9 @@
-import SignInPage from '@/Components/(auth)/SignIn/SignInPage'
-import React from 'react'
+import SignInPage from "@/Components/(auth)/SignIn/SignInPage";
+import React from "react";
 
 const SignIn = () => {
   return (
-     <>
+    <>
       <div className="flex items-center justify-center min-h-screen bg-[#F0EFF1] xs:p-3">
         <div className="w-full max-w-md    bg-[#FFFFFF] shadow-2xl rounded-2xl    p-4 ">
           <h1 className="flex justify-center items-center font-lora  text-3xl font-extrabold   xs:text-2xl">
@@ -22,9 +22,8 @@ const SignIn = () => {
           </h1>
         </div>
       </div>
-     
-     </>
-  )
-}
+    </>
+  );
+};
 
-export default SignIn
+export default SignIn;

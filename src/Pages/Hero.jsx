@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PreLoader from "@/Components/Loading/PreLoader";
+import image from "../Static/hero.png";
 import ReportBtn from "@/Components/ReportBtn/ReportBtn";
 import { ToastContainer } from "../Components/ui/use-toast";
 import { Navbar } from "@/Components/Navbar/Navbar";
@@ -130,7 +131,7 @@ const Hero = () => {
           {/* Navbar */}
           <Navbar />
 
-          <div className="text-area mt-8 text-9xl font-lora font-bold italic xl:text-7xl xl:mt-16 xs:text-5xl xs:mt-2">
+          <div className="mt-8 text-9xl font-lora font-bold italic xl:text-7xl xl:mt-16 xs:text-5xl xs:mt-2">
             <div className="text-1 flex p-1 gap-40 lg:gap-1 lg:-ml-20 lg:text-6xl xs:text-5xl">
               <AnimatedText
                 text="Find"
@@ -149,7 +150,7 @@ const Hero = () => {
               />
             </div>
 
-            <div className="text-3 lg:-ml-44 lg:text-6xl xs:-ml-[26rem] xs:text-5xl">
+            <div className="text-3 lg:-ml-44 lg:text-6xl xs:-ml-[27rem] xs:text-5xl">
               <AnimatedText
                 text="Lost Items"
                 className="ml-[40rem] xl:ml-[35rem]"
@@ -167,8 +168,8 @@ const Hero = () => {
           {/* Image */}
           <div className="img-hero flex justify-center items-center flex-grow mt-12 lg:p-9 xs:mt-5 xs:p-6">
             <motion.img
-              src="https://res.cloudinary.com/dgg8xe2o3/image/upload/v1722928917/hero_nvb6p6.png"
-              className="rounded-3xl shadow-2xl w-[1200px] xl:w-[1050px]"
+              src={image}
+              className="rounded-3xl shadow-2xl w-[1200px] xl:w-[1020px]"
               alt="img-hero"
               initial={{ y: -window.innerHeight, scale: 1.5 }}
               animate={{ y: 0, scale: 1 }}

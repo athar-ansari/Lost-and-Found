@@ -111,7 +111,7 @@ const Profile = () => {
       <h3 className="flex justify-center items-center mt-1 mr-3 font-bold">
         @{userName}
       </h3>
-      <div className="font-lora font-bold text-5xl xs:text-3xl">
+      <div className="font-lora font-bold text-5xl xs:text-2xl">
         <div className="found-post flex justify-center items-center mt-10">
           <h2 className="flex justify-center items-center mt-1">
             Your Found Items Post
@@ -126,7 +126,7 @@ const Profile = () => {
             </p>
           )}
         </div>
-        <hr className="border-1 border-black mx-10 my-3" />
+        <hr className="border-1 border-black mx-10 mt-8  xs:mx-4  xs:mt-5" />
         <div className="lost-post flex justify-center items-center mt-10">
           <h2 className="flex justify-center items-center mt-1">
             Your Lost Items Post

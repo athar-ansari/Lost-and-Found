@@ -48,8 +48,8 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        navigationBgMobile: 'rgba(0, 0, 0, 0.43)',
-        navigationBgPC: 'rgba(255, 255, 255, 0.43)',
+        navigationBgMobile: "rgba(0, 0, 0, 0.43)",
+        navigationBgPC: "rgba(255, 255, 255, 0.43)",
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -59,10 +59,10 @@ const MoreDetailsFound = () => {
   }
 
   return (
-    <div className="bg-[#F0EFF1] h-screen xs:h-full">
+    <div className="bg-[#F0EFF1] overflow-hidden">
       <MoreNavBar />
-      <div className="flex xs:flex-col flex-row lg:items-start mt-10">
-        <div className="flex justify-center items-center w-1/2 xs:w-full p-3 xs:p-4 ">
+      <div className="flex lg:flex-col flex-row  mt-10 xs:mt-4">
+        <div className="flex justify-center items-center w-1/2 lg:w-full p-3 lg:p-4 xs:p-6">
           <img
             src={item.image_url}
             alt={item.title}
@@ -70,23 +70,23 @@ const MoreDetailsFound = () => {
             style={{ maxHeight: "400px" }}
           />
         </div>
-        <div className="flex flex-col items-start xs:p-5 w-1/2 xs:w-full">
+        <div className="flex flex-col items-start   w-1/2  lg:w-full lg:ml-32 xs:ml-8">
           <div className="">
             {" "}
             <h2 className="font-bold text-2xl mt-16 lg:mt-8 xs:mt-1">
               {item.title}
             </h2>
-            <p className="-mt-1 opacity-95   ">{item.date}</p>
-            <h2 className="font-bold text-xl opacity-80 italic mt-1">
+            <p className="-mt-1 opacity-95  ">{item.date}</p>
+            <h2 className="font-bold text-xl opacity-75 italic mt-1">
               {" "}
               Description
             </h2>
-            <p className="mt-2 font-medium font-lora w-3/4">
+            <p className="mt-2 font-medium font-lora w-3/4 lg:w-[70%] xs:w-[84%]">
               {item.description}
             </p>
           </div>
           <br />
-          <div className="flex -mt-3">
+          <div className="flex -mt-3 lg:-mt-1">
             <div>
               <h3 className="mr-1 font-semibold">Posted By :</h3>
             </div>

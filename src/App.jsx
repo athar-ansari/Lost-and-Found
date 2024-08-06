@@ -8,7 +8,8 @@ import Profile from "./Pages/Profile";
 import MoreDetailsFound from "./Components/MoreDetails/MoreDetailsFound";
 import ShowAllLost from "./Components/ShowAllPage/ShowAllLost";
 import ShowAllFound from "./Components/ShowAllPage/ShowAllFound";
-
+// import "./index.css"
+// import "./App.css";
 const App = () => {
   useEffect(() => {
     let docTitle = document.title;

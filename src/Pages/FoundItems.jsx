@@ -45,16 +45,16 @@ const FoundItems = () => {
 
   return (
     <>
-      <hr className="border-1 border-black   mx-10 my-12 xs:my-8" />
-      <div id="found" className="found-items font-lora">
-        <h1 className="mt-20 text-7xl  font-bold italic flex justify-center items-center xs:text-4xl xs:mt-8">
+      <hr className="border-1 border-black mx-10 mt-8  xs:mx-4  xs:mt-5" />
+      <div id="found" className="found-items font-lora overflow-hidden">
+        <h1 className="mt-20 text-7xl  font-bold italic flex justify-center items-center xs:text-2xl xs:mt-4 ">
           Find What You've Lost{" "}
         </h1>
-        <p className="text-xl flex justify-center items-center p-2 underline underline-offset-8 xs:text-sm">
+        <p className="text-xl flex justify-center items-center p-2 underline underline-offset-8 xs:text-[0.58rem]">
           Check out the items that Students have Found and Posted.
         </p>
         <br />
-        <div className="w-full  px-4 mb-8 flex justify-evenly flex-wrap lg:px-10 lg:ml-5 xs:ml-[0.4rem] xs:px-4">
+        <div className="w-full  px-4 mb-8 flex justify-evenly flex-wrap lg:px-10 lg:ml-4 xs:ml-[0.4rem] xs:px-4">
           <RecentFoundItems />
         </div>
         {/* cards */}

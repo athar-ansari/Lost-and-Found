@@ -9,7 +9,7 @@ import HowWork from "./HowWork";
 const Home = () => {
   return (
     <>
-      <div className="home bg-[#F0EFF1] h-full w-full">
+      <div className="home bg-[#F0EFF1] overflow-hidden">
         {/* Text Area */}
         <Hero />
 

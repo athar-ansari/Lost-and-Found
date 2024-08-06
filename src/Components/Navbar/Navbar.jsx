@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   return (
-    <div id="home" className="navbar bg-[#F0EFF1] h-20 ">
+    <div id="home" className="navbar bg-[#F0EFF1] h-20 overflow-hidden">
       <div className="flex font-extrabold font-serif justify-evenly gap-10 lg:gap-8 xs:gap-2 ">
         <div className="logo flex pt-5 -ml-28 font-lora leading-none font-extrabold italic lg:-ml-14 lg:mt-2 xs:mr-2">
           <div className="logo-img -mt-1 -ml-14  ">

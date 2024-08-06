@@ -17,7 +17,7 @@ const RecentFoundItems = () => {
   const navigate = useNavigate();
   const isSignedIn = localStorage.getItem("isLogin") === "true";
   const api = import.meta.env.VITE_API_URL;
-  
+
   useEffect(() => {
     fetch(`${api}/item/found_items`)
       .then((response) => response.json())
@@ -71,7 +71,7 @@ const RecentFoundItems = () => {
   }, [toastId, dismiss]);
 
   return (
-    <div className="flex flex-wrap gap-8 lg:gap-8">
+    <div className="flex flex-wrap gap-8 lg:gap-12">
       {foundItems.map((item, index) => (
         <AnimatedCard
           key={item.id}

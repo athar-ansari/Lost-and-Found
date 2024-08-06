@@ -73,7 +73,7 @@ export default function RecentLostItems() {
   };
 
   return (
-    <div ref={ref} className="flex flex-wrap gap-8 lg:gap-8">
+    <div ref={ref} className="flex flex-wrap gap-8 lg:gap-12">
       {lostItems.map((item) => (
         <motion.div
           key={item.id}

@@ -18,13 +18,12 @@ export const Navbar = () => {
             className="bg-transparent h-14 lg:h-10 xs:hidden  "
             alt="logo-img"
           />
-           <img
+          <img
             src={image2}
             className="bg-transparent  hidden xs:h-10   xs:block "
             alt="logo-img"
           />
         </div>
-
 
         {/* This Navigation For Large Screen ,top of the Screen */}
         <div className="ml-48 lg:ml-14 md:-ml-10 xs:hidden">

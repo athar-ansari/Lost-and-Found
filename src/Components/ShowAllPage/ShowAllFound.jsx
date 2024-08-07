@@ -23,7 +23,7 @@ const ShowAllFound = () => {
     <>
       <div className="bg-[#F0EFF1] overflow-hidden">
         <MoreNavBar />
-        <div className="flex justify-evenly mb-8 p-8 lg:ml-11 lg:p-5 xs:p-2 xs:ml-2">
+        <div className="w-full px-4 mb-8 flex justify-center flex-wrap  lg:px-10">
           <FoundItemsCard />
         </div>
         <Footer />

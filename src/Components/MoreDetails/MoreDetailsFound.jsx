@@ -62,7 +62,7 @@ const MoreDetailsFound = () => {
     <div className="bg-[#F0EFF1] overflow-hidden">
       <MoreNavBar />
       <div className="flex lg:flex-col flex-row  mt-10 xs:mt-4">
-        <div className="flex justify-center items-center w-1/2 lg:w-full p-3 lg:p-4 xs:p-6">
+        <div className="flex justify-center items-center ml-5 lg:ml-0 w-1/2 lg:w-full p-3 lg:p-4  xs:p-6">
           <img
             src={item.image_url}
             alt={item.title}
@@ -70,8 +70,8 @@ const MoreDetailsFound = () => {
             style={{ maxHeight: "400px" }}
           />
         </div>
-        <div className="flex flex-col items-start   w-1/2  lg:w-full lg:ml-32 xs:ml-8">
-          <div className="">
+        <div className="flex flex-col items-start ml-8   w-1/2  lg:w-full lg:ml-32 md:ml-10 sm:-mt-4 xs:ml-8">
+          <div className=" ">
             {" "}
             <h2 className="font-bold text-2xl mt-16 lg:mt-8 xs:mt-1">
               {item.title}
@@ -81,7 +81,7 @@ const MoreDetailsFound = () => {
               {" "}
               Description
             </h2>
-            <p className="mt-2 font-medium font-lora w-3/4 lg:w-[70%] xs:w-[84%]">
+            <p className="mt-2 text-medium font-lora w-3/4 lg:w-[70%] md:w-[78%] xs:w-[85%] xs:text-base">
               {item.description}
             </p>
           </div>
@@ -148,7 +148,7 @@ const MoreDetailsFound = () => {
           </div>
         </div>
       </div>
-      <div className="mt-16 xs:mt-0">
+      <div className="mt-16 lg:mt-5 xs:mt-0">
         {" "}
         <Footer />
       </div>

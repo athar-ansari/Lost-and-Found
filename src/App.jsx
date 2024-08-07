@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Home from "./Pages/Home";
 import PageNotFound from "./Pages/PageNotFound";
 import SignInPage from "./Pages/SignIn";
@@ -11,6 +16,7 @@ import ShowAllFound from "./Components/ShowAllPage/ShowAllFound";
 // import "./index.css"
 // import "./App.css";
 const App = () => {
+  const isLogin = localStorage.getItem("isLogin") === "true";
   useEffect(() => {
     let docTitle = document.title;
 
@@ -38,7 +44,11 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/sign-in" element={<SignInPage />} />
           <Route exact path="/sign-up" element={<SignUpPage />} />
-          <Route exact path="/profile" element={<Profile />} />
+          <Route
+            exact
+            path="/profile"
+            element={isLogin ? <Profile /> : <Navigate to="/sign-in" />}
+          />
           <Route path="/detailsfound/:id" element={<MoreDetailsFound />} />
           <Route exact path="/allfound" element={<ShowAllFound />} />
           <Route exact path="/alllost" element={<ShowAllLost />} />

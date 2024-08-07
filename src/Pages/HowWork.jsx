@@ -4,9 +4,9 @@ import React from "react";
 const HowWork = () => {
   return (
     <>
-      <hr className="border-1 border-black mx-10 mt-8  xs:mx-4  xs:mt-2" />
+      <hr className="border-1 border-black mx-10 mt-8 lg:mx-6  xs:mx-4  xs:mt-2" />
       <div className="font-lora overflow-hidden">
-        <h1 className="mt-12 text-7xl  font-bold   flex justify-center items-center xs:text-3xl xs:mt-4  ">
+        <h1 className="mt-12 text-7xl  font-bold   flex justify-center items-center lg:text-6xl  xs:text-3xl xs:mt-4  ">
           How does it work?
         </h1>
         <Steps />

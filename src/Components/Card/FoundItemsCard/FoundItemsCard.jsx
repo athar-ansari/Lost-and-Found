@@ -49,7 +49,10 @@ const FoundItemsCard = () => {
   }
 
   return (
-    <div ref={ref} className="flex flex-wrap gap-8 lg:gap-5">
+    <div
+      ref={ref}
+      className="w-full px-4 gap-8 mb-8 flex justify-center flex-wrap   lg:px-2"
+    >
       {foundItems.map((item) => (
         <motion.div
           key={item.id}

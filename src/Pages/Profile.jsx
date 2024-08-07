@@ -126,7 +126,7 @@ const Profile = () => {
             </p>
           )}
         </div>
-        <hr className="border-1 border-black mx-10 mt-8  xs:mx-4  xs:mt-5" />
+        <hr className="border-1 border-black mx-10 mt-8 lg:mx-6  xs:mx-4  xs:mt-5" />
         <div className="lost-post flex justify-center items-center mt-10">
           <h2 className="flex justify-center items-center mt-1">
             Your Lost Items Post

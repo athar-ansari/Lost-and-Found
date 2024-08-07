@@ -14,6 +14,8 @@ import {
 
 export default function RecentLostItems() {
   const [lostItems, setLostItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const controls = useAnimation();
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
@@ -61,6 +63,9 @@ export default function RecentLostItems() {
         setLostItems(itemsWithUserNames);
       } catch (error) {
         console.error("Error fetching lost items:", error);
+        setError(error.message);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -72,8 +77,19 @@ export default function RecentLostItems() {
     visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
   };
 
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>Error: {error}</p>;
+  }
+
   return (
-    <div ref={ref} className="flex flex-wrap gap-8 lg:gap-12">
+    <div
+      ref={ref}
+      className="w-full px-4 gap-8 mb-8 flex justify-center flex-wrap lg:gap-8 lg:px-2"
+    >
       {lostItems.map((item) => (
         <motion.div
           key={item.id}

@@ -7,11 +7,12 @@ import Card from "@mui/joy/Card";
 import AspectRatio from "@mui/joy/AspectRatio";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
-import { useToast, ToastAction } from "@/Components/ui/use-toast"; // Adjust import path as needed
+import { useToast, ToastAction } from "@/Components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
 
 const RecentFoundItems = () => {
   const [foundItems, setFoundItems] = useState([]);
+  const [loading, setLoading] = useState(true);
   const { toast, dismiss } = useToast();
   const [toastId, setToastId] = useState(null);
   const navigate = useNavigate();
@@ -19,9 +20,13 @@ const RecentFoundItems = () => {
   const api = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
-    fetch(`${api}/item/found_items`)
-      .then((response) => response.json())
-      .then((data) => {
+    const fetchFoundItems = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(`${api}/item/found_items`);
+        if (!response.ok) throw new Error("Error fetching data");
+        const data = await response.json();
+
         // Sort items by date and then by ID
         const sortedItems = data.sort((a, b) => {
           const dateComparison = new Date(b.date) - new Date(a.date);
@@ -30,12 +35,19 @@ const RecentFoundItems = () => {
           }
           return b.id.localeCompare(a.id); // Sort by ID if dates are the same
         });
+
         // Get the first four items
         const recentItems = sortedItems.slice(0, 4);
         setFoundItems(recentItems);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFoundItems();
+  }, [api]);
 
   const handleShowMoreClick = (e) => {
     if (!isSignedIn) {
@@ -70,8 +82,12 @@ const RecentFoundItems = () => {
     }
   }, [toastId, dismiss]);
 
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
   return (
-    <div className="flex flex-wrap gap-8 lg:gap-12">
+    <div className="w-full px-4 gap-8 mb-8 flex justify-center flex-wrap lg:gap-8 lg:px-2">
       {foundItems.map((item, index) => (
         <AnimatedCard
           key={item.id}
@@ -86,7 +102,7 @@ const RecentFoundItems = () => {
 
 const AnimatedCard = ({ item, index, handleShowMoreClick }) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true });
+  const { ref, inView } = useInView({ triggerOnce: true });
 
   useEffect(() => {
     if (inView) {

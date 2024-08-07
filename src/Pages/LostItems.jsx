@@ -43,16 +43,16 @@ const LostItems = () => {
   }, [toastId, dismiss]);
   return (
     <>
-  <hr className="border-1 border-black mx-10 mt-8  xs:mx-4  xs:mt-5" />
+      <hr className="border-1 border-black mx-10 mt-8  lg:mx-6 xs:mx-4  xs:mt-5" />
       <div id="lost" className="found-items font-lora overflow-hidden">
-        <h1 className="mt-20 text-7xl  font-bold italic flex justify-center items-center xs:text-2xl xs:mt-4 ">
+        <h1 className="mt-20 text-7xl  font-bold italic flex justify-center items-center lg:text-6xl sm:text-[2.7rem]  xs:text-2xl xs:mt-4 ">
           Report What You've Lost{" "}
         </h1>
-        <p className="text-xl flex justify-center items-center p-2 underline underline-offset-8 xs:text-[0.58rem]">
+        <p className="text-xl flex justify-center items-center p-2 underline underline-offset-8 sm:text-base xs:text-[0.58rem] ">
           Promptly report lost items for immediate action by authorities.
         </p>
         <br />
-        <div className="w-full  px-4 mb-8 flex justify-evenly flex-wrap lg:px-10 lg:ml-4  xs:ml-[0.4rem] xs:px-4">
+        <div className="w-full px-4 mb-8 flex justify-center flex-wrap lg:px-10">
           <RecentLostItems />
         </div>
         {/* cards */}

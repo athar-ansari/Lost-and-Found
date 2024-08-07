@@ -137,7 +137,7 @@ const Hero = () => {
                 text="Find"
                 className="ml-36 -mb-8 xl:-mb-6 xl:ml-20  lg:ml-28 md:ml-20 sm:ml-12 xs:ml-10 xs:-mb-2 "
               />
-              <p className="text-base text-wrap mt-10 w-72 ml-96 lg:mt-5 xl:ml-20 lg:text-xs lg:ml-44  sm:ml-20 xs:ml-8  xs:text-[0.45rem] xs:mt-[0.7rem] leading-none">
+              <p className="text-base text-wrap mt-10 w-72 ml-96 lg:mt-5 xl:ml-20 lg:text-xs lg:ml-44  sm:ml-20 xs:ml-5 xs:mr-3  xs:text-[0.45rem] xs:mt-[0.2rem] leading-none">
                 Join our community to reconnect with lost belongings and report
                 found items.
               </p>

@@ -62,7 +62,7 @@ const MoreDetailsFound = () => {
     <div className="bg-[#F0EFF1] overflow-hidden">
       <MoreNavBar />
       <div className="flex lg:flex-col flex-row  mt-10 xs:mt-4">
-        <div className="flex justify-center items-center ml-5 lg:ml-0 w-1/2 lg:w-full p-3 lg:p-4  xs:p-6">
+        <div className="flex justify-center items-center ml-5 lg:ml-0 w-1/2 lg:w-full p-3 lg:p-4  xs:p-6 xs:-mt-3">
           <img
             src={item.image_url}
             alt={item.title}
@@ -81,7 +81,7 @@ const MoreDetailsFound = () => {
               {" "}
               Description
             </h2>
-            <p className="mt-2 text-medium font-lora w-3/4 lg:w-[70%] md:w-[78%] xs:w-[85%] xs:text-base">
+            <p className="mt-2 text-medium font-lora w-3/4 lg:w-[70%] md:w-[78%] xs:w-[85%] xs:text-sm ">
               {item.description}
             </p>
           </div>

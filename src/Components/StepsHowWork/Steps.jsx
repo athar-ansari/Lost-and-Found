@@ -38,7 +38,7 @@ const Steps = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-evenly items-start p-2 mt-8 gap-8">
+    <div className="  px-4 gap-8 mb-3 flex justify-center flex-wrap lg:gap-8 lg:px-2 ">
       {steps.map((step, index) => (
         <StepCard
           key={index}

@@ -96,7 +96,7 @@ const MobileNavigation = () => {
   return (
     <div className="navigation flex justify-center mt-5 ">
       <div
-        className="h-14 w-[23.5rem] flex items-center justify-center rounded-full  fixed z-10 lg:w-[18rem] lg:h-[2.35rem]  xs:w-[16rem] xs:h-[3.9rem]     bg-navigationBgPC xs:bg-navigationBgMobile  xs:bottom-8"
+        className="h-14 w-[23.5rem] flex items-center justify-center rounded-full  fixed z-50     lg:w-[16rem] lg:h-[3.9rem]     bg-navigationBgPC lg:bg-navigationBgMobile  xs:bottom-8"
         style={{
           // background: "rgba(0, 0, 0, 0.43)", //mobile device
           // background: " rgba(255, 255, 255, 0.43)", // Large Screen
@@ -114,18 +114,18 @@ const MobileNavigation = () => {
             }}
           ></div>
           {/* This Navigation Style Specific For Medium[lg] Screen  ---Start */}
-          <div
+          {/* <div
             className="nav-indicator hidden lg:block   xs:hidden absolute h-7  bg-black rounded-full -mt-[0.14rem] transition-all duration-700 ease-in-out "
             style={{
               width: `${indicatorStyle.width + 20}px`,
               left: `${indicatorStyle.left - 10}px`,
             }}
-          ></div>
+          ></div> */}
           {/* This Navigation Style Specific For Medium[lg] Screen  ---End */}
 
           {/* This Navigation Style Specific For Small/Mobile Screen  ---Start */}
           <div
-            className="nav-indicator-mobile hidden lg:hidden xs:block absolute h-10 bg-black rounded-full -mt-1 transition-all duration-700 ease-in-out xs:-mt-2  xs:h-11 xs:w-11 "
+            className="nav-indicator-mobile hidden   lg:block absolute h-10 bg-black rounded-full -mt-1 transition-all duration-700 ease-in-out lg:-mt-2  lg:h-11 lg:w-11 "
             style={{
               left: `${indicatorStyle.left - 8}px`,
             }}
@@ -141,8 +141,8 @@ const MobileNavigation = () => {
               } z-10`}
               onClick={() => handleNavigation(index, idMapping[item])}
             >
-              <span className="xs:hidden">{item}</span>
-              <span className="hidden xs:inline">
+              <span className="lg:hidden">{item}</span>
+              <span className="hidden lg:inline">
                 <img src={images[item]} alt={item} className="w-7 h-7" />
               </span>
             </li>

@@ -50,7 +50,7 @@ const AfterLogin = () => {
   };
 
   return (
-    <NavigationMenu className="lg:-ml-12 xl:-ml-10  xs:-ml-5">
+    <NavigationMenu className="lg:-ml-12 xl:-ml-10  xs:-ml-7">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent font-lora font-bold text-base mt-1 xs:text-sm xs:p-1 ">

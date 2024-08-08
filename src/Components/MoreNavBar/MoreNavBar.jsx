@@ -6,7 +6,7 @@ import image2 from "../../Static/logomobile.png";
 const MoreNavBar = () => {
   return (
     <>
-      <div className="bg-[#F0EFF1] h-20 overflow-hidden">
+      <div className="bg-[#F0EFF1] h-20 overflow-hidden  ">
         <div className="flex font-extrabold font-serif justify-between  ">
           <div className=" pt-5 ml-20   lg:ml-16 lg:mt-2 xs:ml-3 xs:mt-1   ">
             <img
@@ -20,7 +20,7 @@ const MoreNavBar = () => {
               alt="logo-img"
             />
           </div>
-          <div className="mt-5   mr-28 xs:mr-8">
+          <div className="mt-5   mr-28 xs:mr-8 xs:mt-6">
             <Link to="/">
               <Btn text="Back" />
             </Link>

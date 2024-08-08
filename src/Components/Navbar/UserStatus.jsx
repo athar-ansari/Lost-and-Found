@@ -13,7 +13,7 @@ const UserStatus = () => {
   };
 
   return (
-    <div className="mt-6 absolute ml-32 lg:ml-14  xs:ml-1 xs:mt-8 md:hidden xs:block">
+    <div className="mt-6 absolute ml-32 lg:ml-14  xs:ml-1 xs:mt-8 lg:hidden xs:block">
       {!isLogin ? (
         <Btn text="Login" onClick={handleLoginClick} />
       ) : (

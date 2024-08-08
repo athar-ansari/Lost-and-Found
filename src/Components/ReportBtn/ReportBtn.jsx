@@ -39,7 +39,7 @@ const ReportBtn = ({ isDialogOpen, setIsDialogOpen }) => {
       const timer = setTimeout(() => {
         dismiss(toastId);
         setToastId(null);
-      }, 2500);
+      }, 1000);
 
       return () => clearTimeout(timer);
     }

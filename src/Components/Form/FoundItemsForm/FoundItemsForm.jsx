@@ -43,7 +43,7 @@ const FoundItemsForm = () => {
       // Dismiss the toast after 2 seconds
       setTimeout(() => {
         dismiss(toastId);
-      }, 2000);
+      }, 1000);
     }
   }, [toast, dismiss]);
 

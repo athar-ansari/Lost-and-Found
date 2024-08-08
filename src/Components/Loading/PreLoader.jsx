@@ -45,7 +45,7 @@ const PreLoader = ({ onComplete }) => {
             animate={controls}
           />
         </div>
-        <div className="lower-pic flex justify-between mb-10 xs:-mt-16 xs:mb-0">
+        <div className="lower-pic flex justify-between mb-10 xs:-mt-20  ">
           <motion.img
             src="https://res.cloudinary.com/dgg8xe2o3/image/upload/v1722928919/about3_lu4ryn.png"
             className="ml-48 shadow-xl w-1/6 -mt-48 lg:w-1/4 xs:w-1/3 lg:ml-20 xs:ml-8 xs:-mt-36"

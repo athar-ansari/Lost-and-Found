@@ -78,7 +78,7 @@ const StepCard = ({ step, index, isLargeScreen }) => {
       <img
         src={step.image}
         alt={step.title}
-        className="w-52 h-52 mx-auto mb-20"
+        className="w-52 h-52 mx-auto mb-9 lg:mb-14  xs:mb-20"
       />
       <div className="absolute bottom-1 right-4 text-7xl font-bold text-gray-300 group-hover:text-blue-800">
         {index + 1}

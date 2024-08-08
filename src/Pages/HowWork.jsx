@@ -9,7 +9,7 @@ const HowWork = () => {
         <h1 className="mt-10 text-7xl  font-bold   flex justify-center items-center xl:text-6xl lg:text-5xl  xs:text-3xl xs:mt-4  mb-8  ">
           How does it work?
         </h1>
-        <Steps />
+        <Steps />{" "}
       </div>
     </>
   );

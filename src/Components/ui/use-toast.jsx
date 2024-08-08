@@ -2,7 +2,7 @@ import * as React from "react";
 import { Button } from "./button";
 
 const TOAST_LIMIT = 1;
-const TOAST_REMOVE_DELAY = 2500;
+const TOAST_REMOVE_DELAY = 1000;
 
 const actionTypes = {
   ADD_TOAST: "ADD_TOAST",
@@ -165,10 +165,14 @@ const ToastContainer = () => {
           className="bg-[#F0EFF1] text-black p-4 mb-2 rounded-2xl shadow-2xl font-lora tracking-wide flex"
         >
           <div>
-            <h4>{toast.title}</h4>
-            <p className="text-red-500 opacity-90">{toast.description}</p>
+            <h4 className="xs:text-xs xs:mt-2">{toast.title}</h4>
+            <p className="text-red-500 opacity-90 xs:text-[0.6rem]">
+              {toast.description}
+            </p>
           </div>
-          {toast.action && <div className="ml-2 mt-2">{toast.action}</div>}
+          {toast.action && (
+            <div className="ml-2 mt-2 xs:mt-0">{toast.action}</div>
+          )}
         </div>
       ))}
     </div>

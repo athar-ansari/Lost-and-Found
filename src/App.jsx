@@ -50,8 +50,16 @@ const App = () => {
             element={isLogin ? <Profile /> : <Navigate to="/sign-in" />}
           />
           <Route path="/detailsfound/:id" element={<MoreDetailsFound />} />
-          <Route exact path="/allfound" element={<ShowAllFound />} />
-          <Route exact path="/alllost" element={<ShowAllLost />} />
+          <Route
+            exact
+            path="/allfound"
+            element={isLogin ? <ShowAllFound /> : <Navigate to="/sign-in" />}
+          />
+          <Route
+            exact
+            path="/alllost"
+            element={isLogin ? <ShowAllLost /> : <Navigate to="/sign-in" />}
+          />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Router>

@@ -96,7 +96,7 @@ const MobileNavigation = () => {
   return (
     <div className="navigation flex justify-center mt-5 ">
       <div
-        className="h-14 w-[23.5rem] flex items-center justify-center rounded-full  fixed z-10  xs:w-[16rem] xs:h-[3.9rem]   bg-navigationBgPC xs:bg-navigationBgMobile  xs:bottom-8"
+        className="h-14 w-[23.5rem] flex items-center justify-center rounded-full  fixed z-10 lg:w-[20.5rem] lg:h-11  xs:w-[16rem] xs:h-[3.9rem]     bg-navigationBgPC xs:bg-navigationBgMobile  xs:bottom-8"
         style={{
           // background: "rgba(0, 0, 0, 0.43)", //mobile device
           // background: " rgba(255, 255, 255, 0.43)", // Large Screen
@@ -105,14 +105,23 @@ const MobileNavigation = () => {
           WebkitBackdropFilter: "blur(2.7px)",
         }}
       >
-        <ul className="flex gap-9 font-lora text-2xl font-extrabold relative">
+        <ul className="flex gap-9 font-lora text-2xl lg:text-xl font-extrabold relative">
           <div
-            className="nav-indicator xs:hidden absolute h-10 bg-black rounded-full -mt-1 transition-all duration-700 ease-in-out "
+            className="nav-indicator lg:hidden xs:hidden  absolute h-10 bg-black rounded-full -mt-1 transition-all duration-700 ease-in-out "
             style={{
               width: `${indicatorStyle.width + 22}px`,
               left: `${indicatorStyle.left - 12}px`,
             }}
           ></div>
+          {/* This Navigation Style Specific For Medium[lg] Screen  ---Start */}
+          <div
+            className="nav-indicator hidden lg:block   xs:hidden absolute h-8  bg-black rounded-full -mt-[0.11rem] transition-all duration-700 ease-in-out "
+            style={{
+              width: `${indicatorStyle.width + 20}px`,
+              left: `${indicatorStyle.left - 10}px`,
+            }}
+          ></div>
+          {/* This Navigation Style Specific For Medium[lg] Screen  ---End */}
 
           {/* This Navigation Style Specific For Small/Mobile Screen  ---Start */}
           <div

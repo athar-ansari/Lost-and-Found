@@ -18,11 +18,11 @@ const RecentFoundItems = () => {
   const navigate = useNavigate();
   const isSignedIn = localStorage.getItem("isLogin") === "true";
   const api = import.meta.env.VITE_API_URL;
-
   useEffect(() => {
     const fetchFoundItems = async () => {
       try {
         setLoading(true);
+        const api = import.meta.env.VITE_API_URL;
         const response = await fetch(`${api}/item/found_items`);
         if (!response.ok) throw new Error("Error fetching data");
         const data = await response.json();

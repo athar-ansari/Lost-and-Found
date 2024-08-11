@@ -8,7 +8,7 @@ const PreLoader = ({ onComplete }) => {
     const sequence = async () => {
       await controls.start({
         scale: [0.5, 1.5, 1],
-        transition: { duration: 2, ease: "easeInOut" },
+        transition: { duration: 2.5, ease: "easeInOut" },
       });
       onComplete();
     };

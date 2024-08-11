@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PreLoader from "@/Components/Loading/PreLoader";
 import image from "../Static/hero.png";
-import ReportBtn from "@/Components/ReportBtn/ReportBtn";
-import { ToastContainer } from "../Components/ui/use-toast";
 import { Navbar } from "@/Components/Navbar/Navbar";
 import MobileNavigation from "../Components/MobileNavigation/MobileNavigation";
 
@@ -72,7 +70,7 @@ const Hero = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
+        window.scrollY || document.documentElement.scrollTop;
       const windowHeight =
         window.innerHeight || document.documentElement.clientHeight;
       const documentHeight = document.documentElement.scrollHeight;

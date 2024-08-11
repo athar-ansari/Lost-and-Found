@@ -9,7 +9,7 @@ const About = () => {
         <h1 className="mt-10 text-7xl  font-bold italic flex justify-center items-center lg:text-6xl sm:text-5xl xs:text-2xl xs:mt-5 ">
           Explore Our Mission
         </h1>
-        <p className="text-xl flex justify-center items-center p-2 underline underline-offset-8 sm:text-lg xs:text-sm">
+        <p className="text-xl flex justify-center items-center p-2 underline underline-offset-8 lg:text-lg sm:text-sm xs:text-xs">
           Specially designed for AEC Student
         </p>
         <div className="flex flex-col  items-center p-4">
